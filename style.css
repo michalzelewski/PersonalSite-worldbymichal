@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of the reset above*/
+
+/* Global text style */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #7F8C8D;
+	line-height: 1.7;
+}
+
+p {
+	margin-top: 6px;
+}
+
+h2, h3, h4, label {
+	color: #45474F;
+}
+
+h1 {
+	font-size: 56px;
+	line-height: 1.2;
+	text-shadow: 0px 3px 5px #000000;
+	font-family: brandon-grotesque;
+    font-weight: 100;
+    font-style: normal;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 25px;
+	margin-bottom: 48px;
+	text-transform: uppercase;
+}
+
+h3, h4, strong {
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+/* column, container, sections */
+/*.col-one-third {
+	width: 33.3333%;
+	float: left;
+}
+
+.col-half {
+	width: 50%;
+	float: left;
+}*/
+
+.col-one-third, .col-half {
+	width: 100%;
+	float: none;
+}
+
+@media screen and (min-width: 960px) {
+.col-one-third {
+	width: 33.3333%;
+	float: left;
+}
+.col-half {
+	width: 50%;
+	float: left;
+}
+}
+
+section {
+	clear: both;
+	padding: 90px 0;
+	overflow: auto;
+}
+
+.container {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+.center-text {
+	text-align: center;
+}
+
+/* buttons */
+.button {
+	display: inline-block;
+	padding: 8px 20px;
+	margin: 16px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+}
+
+.button-light {
+	background: transparent;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF	
+}
+
+.button-dark {
+	background: goldenrod;
+	color: #FFFFFF;
+	cursor: pointer;
+	box-shadow: 0px 3px 5px #000000;
+}
+
+.button-dark:hover {
+	background: #B0C4DE
+}
+
+.button-light:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* head menu of website */
+.top {
+	height: 60px;
+	background: #34495E;
+}
+
+.top a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.logo {
+	float: left;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 60px;
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+
+.main-menu {
+	float: right;
+}
+
+.main-menu li {
+	float: left;
+	line-height: 60px;
+	padding: 0 10px;
+}
+ 
+/* style for banner */
+@media screen and (min-width: 960px) {
+.banner {
+	color: #FFFFFF;
+	background: #000000;
+	padding: 200px;
+	background: url("img/img_6361.jpg") 0 -320px;
+}
+
+}
+.banner h1 {
+	margin-bottom: 30px;
+}
+
+.banner_motto {
+	text-transform: uppercase;
+	text-shadow: 0px 3px 5px #000000;
+}
+
+/* section intro */
+.intro img {
+	margin-bottom: 32px;
+	width: 200px;
+	height: 200px;
+}
+
+.intro h3 {
+	color: #34495E;
+	margin-bottom: 10px;
+}
+
+/* section portfolio */
+.portfolio {
+	background: #34495E;
+}
+
+.portfolio h2 {
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.portfolio p {
+	color: #EEEEEE;
+}
+
+/* section contact */
+
+.sign {
+	font-weight: bold;
+	color: #7F8C8D;
+}
+
+.sign_motto {
+	display: block;
+	padding-right: 76px;
+	padding-bottom: 68px;
+	text-align: justify;
+
+}
+
+.contact input {
+	margin-bottom: 16px;
+	border-radius: 2px;
+	border: 1px solid #DDDDDD;
+	padding: 8px;
+	width: 80%;
+}
+
+.contact .col-half {
+	margin-top: 16px;
+}
+
+/* about section */
+
+.about_motto {
+	display: block;
+	padding-right: 76px;
+	padding-bottom: 68px;
+	text-align: justify;
+}
+
+.clearfix {
+	overflow: auto;
+	text-align: justify;		
+}
+
+.about_img {
+	float: right;
+	padding-left: 76px;
+	padding-top: 10px;
+	padding-bottom: 40px;	
+}
+
+/*footer*/
+.site-footer {
+	background: #000000;
+	color: #FFFFFF;
+	padding: 16px;
+}
